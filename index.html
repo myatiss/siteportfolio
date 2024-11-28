@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радомир - Видеограф</title>
+    <link rel="icon" href="/img/P.png" type="image/png">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение шрифта SC Portugal -->
+    <link href="https://fonts.googleapis.com/css2?family=Riviera&display=swap" rel="stylesheet">
+    <!-- Подключение JavaScript -->
+    <script src="script.js" defer></script>
+    <!-- Подключение иконок -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Якорь для возврата на главный экран -->
+    <div id="top"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#top" class="logo">Радомир</a>
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <nav class="nav">
+                <button class="burger-menu">&#9776;</button>
+                <div class="nav-links">
+                    <a href="#about">Обо мне</a>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#form">Заявка</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </nav>            
+        </div>
+    </header>
+
+    <!-- Главная секция с видео -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="videos/илгэ - урун тунах ыьыаҕынан (видеоролик).mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <h2 class="hero-text">Видеограф НВК Саха</h2>
+    </section>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about" class="about">
+        <video autoplay muted loop class="background-video">
+            <source src="/videos/editing-process.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="about-content">
+            <h2>Обо мне</h2>
+            <div class="about-inner">
+                <img src="/img/фото видеографа.jpg" alt="Радомир" class="about-photo">
+                <div class="about-text">
+                    <p>Я, Радомир Сергеев, профессиональный видеограф с опытом работы в НВК Саха. Мои работы включают съемку корпоративных мероприятий, рекламных роликов и документальных фильмов.</p>
+                    <p>С каждым проектом я стремлюсь рассказывать уникальные истории, создавая качественный и запоминающийся контент.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Секция портфолио -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <!-- Фильтрация по категориям -->
+            <div class="portfolio-filters">
+                <button data-filter="all" class="filter-btn active">Все</button>
+                <button data-filter="category1" class="filter-btn">Ролик</button>
+                <button data-filter="category2" class="filter-btn">Клипы</button>
+                <button data-filter="category3" class="filter-btn">Природа</button>
+                <button data-filter="category4" class="filter-btn">Свадьба</button>
+                <button data-filter="category5" class="filter-btn">Другие</button>
+            </div>
+            <!-- Карточки с видео -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="category1">
+                    <video src="/videos/БУРАН ШОУ - РОЛИК.mp4" controls></video>
+                    <h3>БУРАН ШОУ - РОЛИК</h3>
+                </div>
+                <div class="portfolio-item" data-category="category2">
+                    <video src="/videos/Гимназия Эр дьоно - Ийэбэр.mp4" controls></video>
+                    <h3>Гимназия Эр дьоно - Ийэбэр</h3>
+                </div>
+                <div class="portfolio-item" data-category="category3">
+                    <video src="/videos/ЕЛЕЕН - ДЬУКЭЭБИЛЬ.mp4" controls></video>
+                    <h3>ЕЛЕЕН - ДЬУКЭЭБИЛЬ</h3>
+                </div>
+                <div class="portfolio-item" data-category="category4">
+                    <video src="videos/Елена Клим - Свадебный ролик (вариант 2).mp4" controls></video>
+                    <h3>Елена Клим</h3>
+                </div>
+                <div class="portfolio-item" data-category="category5">
+                    <video src="/videos/ИГР МАНЧААРЫ 2029 В СУНТАРЕ2.mp4" controls></video>
+                    <h3>ИГР МАНЧААРЫ 2029 В СУНТАРЕ2</h3>
+                </div>
+                <div class="portfolio-item" data-category="category1">
+                    <video src="videos/илгэ - урун тунах ыьыаҕынан (видеоролик).mp4" controls></video>
+                    <h3>илгэ - урун тунах ыьыаҕынан</h3>
+                </div>
+                <div class="portfolio-item" data-category="category1">
+                    <video src="videos/ИТОГИ ГОДА МОЛОДЕЖ (ролик 8 минут).mp4" controls></video>
+                    <h3>ИТОГИ ГОДА МОЛОДЕЖ</h3>
+                </div>
+                <div class="portfolio-item" data-category="category1">
+                    <video src="videos/КЫТАЛЫК - ПОЛИНА АЛЕКСЕЕВА - ВИДЕОРОЛИК.mp4" controls></video>
+                    <h3>КЫТАЛЫК - ПОЛИНА АЛЕКСЕЕВА</h3>
+                </div>
+                <div class="portfolio-item" data-category="category5">
+                    <video src="videos/межпрограмка сунтаар 7 часов утра апрель.mp4" controls></video>
+                    <h3>Межпрограмка</h3>
+                </div>
+                <div class="portfolio-item" data-category="category5">
+                    <video src="videos/межпрограмка сылгылар хааман кэлэн аьыыллар.mp4" controls></video>
+                    <h3>Межпрограмка</h3>
+                </div>
+                <div class="portfolio-item" data-category="category5">
+                    <video src="videos/межпрограмка ынахтар улуу баран иьэллэр.mp4" controls></video>
+                    <h3>Межпрограмка</h3>
+                </div>
+                <div class="portfolio-item" data-category="category2">
+                    <video src="videos/Сахам сирэ Файрушина(Сунтаардар).mp4" controls></video>
+                    <h3>Сахам сирэ Файрушина</h3>
+                </div>
+                <div class="portfolio-item" data-category="category4">
+                    <video src="videos/Света и Уйгулаан (Сборы, прогулка, торжественная часть).mp4" controls></video>
+                    <h3>Света и Уйгулаан</h3>
+                </div>
+                <div class="portfolio-item" data-category="category5">
+                    <video src="videos/СВЕЧА ПАМЕТИ 2023.mp4" controls></video>
+                    <h3>СВЕЧА ПАМЕТИ 2023</h3>
+                </div>
+                <div class="portfolio-item" data-category="category4">
+                    <video src="videos/СЕМЬЯ ПОГОДАЕВЫХ - ВИДЕОПРЕЗЕНТАЦИЯ - СУНТАРСКИЙ УЛУС.mp4" controls></video>
+                    <h3>СЕМЬЯ ПОГОДАЕВЫХ</h3>
+                </div>
+                <!-- Добавьте остальные карточки с видео -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Секция формы заявки -->
+    <section id="form" class="form-section">
+        <div class="form-container">
+            <!-- Левая часть -->
+            <div class="form-left">
+                <h2>Давайте создадим что-то удивительное!</h2>
+                <p>Заполните форму, и мы свяжемся с вами как можно скорее!</p>
+                <img src="/img/Чиловый парень.jpg" alt="Позитивное изображение">
+            </div>
+    
+            <!-- Правая часть (Форма) -->
+            <div class="form-right">
+                <h2>Оставьте заявку</h2>
+                <form>
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Имя</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Телефон</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <i class="fas fa-comment"></i>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                        <label for="message">Комментарий</label>
+                    </div>
+    
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами удобным для вас способом!</p>
+    
+            <!-- Контактные данные -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:79141120415">+7 (914) 112-04-15</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:example@email.com">example@email.com</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Якутск, Россия</p>
+                </div>
+            </div>
+    
+            <!-- Ссылки на мессенджеры -->
+            <div class="social-links">
+                <a href="https://wa.me/+79141120415" target="_blank" class="social-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://t.me/+79141120415" target="_blank" class="social-btn">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+            </div>
+    
+            <!-- Карта -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29821.686985264867!2d117.6062708579705!3d62.15035288182631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c706571815807fd%3A0xa3993792193245d3!2z0KHRg9C90YLQsNGALCDQoNC10YHQvy4g0KHQsNGF0LAgKNCv0LrRg9GC0LjRjyksINCg0L7RgdGB0LjRjywgNjc4Mjkw!5e0!3m2!1sru!2snl!4v1732783873846!5m2!1sru!2snl"
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>            
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Логотип или название -->
+                <div class="footer-logo">
+                    <h2>Радомир</h2>
+                    <p>Видеограф НВК Саха</p>
+                </div>
+    
+                <!-- Ссылки на социальные сети -->
+                <div class="footer-social">
+                    <a href="https://wa.me/+79141120415" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/+79141120415" target="_blank" class="social-link">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="mailto:example@email.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+    
+                <!-- Контактная информация -->
+                <div class="footer-contact">
+                    <p>Телефон: <a href="tel:+79141120415">+7 (914) 112-04-15</a></p>
+                    <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+                    <p>Адрес: г. Якутск, у. Сунтар, с. Сунтар</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Радомир Сергеев. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
